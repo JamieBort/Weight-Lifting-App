@@ -1,9 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-// import DefaultScreen from './src/js/components/DefaultScreen';
-// import EditScreen from './src/js/components/EditScreen';
-// import ToggleButton from './src/js/components/ToggleButton';
+import DefaultScreen from './src/js/components/DefaultScreen';
+import EditScreen from './src/js/components/EditScreen';
+import ToggleButton from './src/js/components/ToggleButton';
 
 class App extends React.Component {
 	constructor(props) {
@@ -23,24 +23,24 @@ class App extends React.Component {
 		}));
 	}
 
-	render() {
-		return (
-			<Text style={styles.container}>hi</Text>
-			// <View style={styles.container}>
-			// 	<ToggleButton myFunction={this.handleClick} />
-			// 	{this.state.isToggleOn ? <DefaultScreen /> : <EditScreen />}
-			// </View>
-		);
-	}
-
 	// render() {
 	// 	return (
-	// 		<View style={styles.container}>
-	// 			<ToggleButton myFunction={this.handleClick} />
-	// 			{this.state.isToggleOn ? <DefaultScreen /> : <EditScreen />}
-	// 		</View>
+	// 		<Text style={styles.container}>hi</Text>
+	// 		// <View style={styles.container}>
+	// 		// 	<ToggleButton myFunction={this.handleClick} />
+	// 		// 	{this.state.isToggleOn ? <DefaultScreen /> : <EditScreen />}
+	// 		// </View>
 	// 	);
 	// }
+
+	render() {
+		return (
+			<View style={styles.container}>
+				<ToggleButton myFunction={this.handleClick} />
+				{this.state.isToggleOn ? <DefaultScreen /> : <EditScreen />}
+			</View>
+		);
+	}
 }
 
 const styles = StyleSheet.create({

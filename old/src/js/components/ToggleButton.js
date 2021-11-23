@@ -1,4 +1,4 @@
-// src/js/components/ToggleButton.js
+// old/src/js/components/ToggleButton.js
 
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
@@ -9,9 +9,7 @@ const ToggleButton = (props) => {
 	return (
 		<View>
 			<Text>Toggle button switches between default screen and edit screen</Text>
-			{/* <Text>
-				<button onClick={props.myFunction}>Toggle Button</button>
-			</Text> */}
+			<button onClick={props.myFunction}>Toggle Button</button>
 		</View>
 	);
 };
