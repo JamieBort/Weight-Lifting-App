@@ -8,8 +8,10 @@ import EditScreen from './EditScreen';
 const ToggleButton = (props) => {
 	return (
 		<View>
-			<p>Toggle button switches between default screen and edit screen</p>
-			<button onClick={props.myFunction}>Toggle Button</button>
+			<Text>Toggle button switches between default screen and edit screen</Text>
+			{/* <Text>
+				<button onClick={props.myFunction}>Toggle Button</button>
+			</Text> */}
 		</View>
 	);
 };

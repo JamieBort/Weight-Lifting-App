@@ -29,9 +29,15 @@ class EditScreen extends React.Component {
 	render() {
 		return (
 			<View>
-				<h1>Edit Screen</h1>
-				<p>Screen that allows me to add or edit exercise days</p>
-				<p>List existing exercise days.</p>
+				<Text>
+					<h1>Edit Screen</h1>
+				</Text>
+				<Text>
+					<p>Screen that allows me to add or edit exercise days</p>
+				</Text>
+				<Text>
+					<p>List existing exercise days.</p>
+				</Text>
 				{this.state.exerciseExists ? (
 					<ExerciseDay status={this.state.exerciseExists} removeFunction={this.handleClick} />
 				) : null}

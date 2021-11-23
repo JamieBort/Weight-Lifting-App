@@ -11,16 +11,22 @@ import { StyleSheet, Text, View } from 'react-native';
 import ToggleButton from './ToggleButton';
 
 const DefaultScreen = () => {
-	console.log('toggle back and forth');
+	// console.log('toggle back and forth');
 	return (
 		<View>
-			<h1>Default Screen/Home Screen</h1>
-
-			<p>Display which exercise day I performed when.</p>
-			<p>Leg day last done on Tuesday</p>
-			<p>Back day last done on Monday</p>
-			<p>Ect.</p>
-			{/* <ToggleButton /> */}
+			<Text>Default Screen/Home Screen</Text>
+			<Text>
+				<p>Display which exercise day I performed when.</p>
+			</Text>
+			<Text>
+				<p>Leg day last done on Tuesday</p>
+			</Text>
+			<Text>
+				<p>Back day last done on Monday</p>
+			</Text>
+			<Text>
+				<p>Ect.</p>
+			</Text>
 		</View>
 	);
 };

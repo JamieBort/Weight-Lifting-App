@@ -10,8 +10,9 @@ const CountDownTimer = () => {
 	// console.log('toggle back and forth');
 	return (
 		<View>
-			<h1>CountDownTimer</h1>
-			{/* <ToggleButton /> */}
+			<Text>
+				<h1>CountDownTimer</h1>
+			</Text>
 		</View>
 	);
 };

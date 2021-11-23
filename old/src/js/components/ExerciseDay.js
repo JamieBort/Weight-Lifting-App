@@ -14,16 +14,14 @@ import RemoveButton from './RemoveButton';
 const ExerciseDay = (props) => {
 	return (
 		<View>
-			<h3>An exercise day such as leg day</h3>
+			<Text>
+				<h3>An exercise day such as leg day</h3>
+			</Text>
 			<EditButton text="Edit this Exercise." editFunction={null} />
-			<RemoveButton
-				text="Remove this Exercise."
-				status={props.status}
-				// removeFunction={this.handleClick}
-
-				removeFunction={props.removeFunction}
-			/>
-			<p>{props.status ? 'true' : 'false'}</p>
+			<RemoveButton text="Remove this Exercise." status={props.status} removeFunction={props.removeFunction} />
+			<Text>
+				<p>{props.status ? 'true' : 'false'}</p>
+			</Text>
 		</View>
 	);
 };
