@@ -28,9 +28,6 @@ class App extends React.Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<DefaultScreen />
-				<EditScreen />
-				<Text>Open up App.js to start working on your app!</Text>
 				<ToggleButton fnctn={this.handleToggleButton} />
 				{this.state.isToggleOn ? <DefaultScreen /> : <EditScreen />}
 			</View>
@@ -38,26 +35,10 @@ class App extends React.Component {
 	}
 }
 
-// export default function App() {
-// 	function handleToggleButton() {
-// 		console.log('ToggleButton fired.');
-// 	}
-
-// 	return (
-// 		<View style={styles.container}>
-// 			<Text>Open up App.js to start working on your app!</Text>
-// 			<ToggleButton fnctn={handleToggleButton} />
-// 			<DefaultScreen />
-// 			<EditScreen />
-// 		</View>
-// 	);
-// }
-
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		backgroundColor: 'lightblue',
-		// backgroundColor: '#fff',
 		alignItems: 'center',
 		justifyContent: 'center',
 	},

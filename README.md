@@ -17,6 +17,14 @@ To run this locally,
 
 * set up basic outline of each component - what is needed and where
 
+* each time the addButton is selected, a new component needs to be added
+
+* it's respective removeButton needs to remove just that one component.
+
+* then the state needs to be preserved so that when the app is closed, those added components are kept....
+
+* maybe have the removeButton and addButton both be replaced with a single button?
+
 ## Status
 
 **Check the branch:**

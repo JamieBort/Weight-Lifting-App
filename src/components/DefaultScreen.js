@@ -17,11 +17,12 @@ const DefaultScreen = () => {
 
 const styles = StyleSheet.create({
 	defaultScreen: {
-		flex: 1,
 		backgroundColor: 'yellow',
-		// backgroundColor: '#fff',
-		alignItems: 'center',
-		justifyContent: 'center',
+		// flex: 1,
+		// alignItems: 'center',
+		// justifyContent: 'center',
+		// margin: 20,
+		// padding: 20,
 	},
 });
 

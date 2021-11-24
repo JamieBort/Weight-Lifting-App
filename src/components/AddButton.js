@@ -1,19 +1,19 @@
-// src/components/ToggleButton.js
+// /src/js/components/AddButton.js
 
 import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
-const ToggleButton = (props) => {
+const AddButton = ({ fnctn }) => {
 	return (
-		<View style={styles.toggleButton}>
-			<Text>Toggle button switches between default screen and edit screen</Text>
-			<Button title="Toggle Button" onPress={props.fnctn} />
+		<View style={styles.addButton}>
+			<Text>Add button switches between default screen and edit screen</Text>
+			<Button title="Add Button" onPress={fnctn} />
 		</View>
 	);
 };
 
 const styles = StyleSheet.create({
-	toggleButton: {
+	addButton: {
 		backgroundColor: 'green',
 		// flex: 1,
 		// alignItems: 'center',
@@ -22,5 +22,4 @@ const styles = StyleSheet.create({
 		padding: 5,
 	},
 });
-
-export default ToggleButton;
+export default AddButton;
