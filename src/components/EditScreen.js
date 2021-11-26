@@ -2,30 +2,23 @@
 
 import React, { Component } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
-import AddButton from './AddButton';
+import AddExerciseDay from './AddExerciseDay';
 import ExerciseDay from './ExerciseDay';
 
 class EditScreen extends Component {
-	// const EditScreen = () => {
-	// need state to remember the number of children components.
+	// Need to "pop" just that one component.
 	state = {
-		numberOfChildren: 0,
+		// numberOfChildren: 0,
+		numberOfChildren: {},
 	};
 
-	// function addFunction() {
-	addFunction = () => {
-		console.log('AddButton pressed');
+	add = () => {
+		console.log('AddExerciseDay pressed');
 		this.setState({ numberOfChildren: this.state.numberOfChildren + 1 });
 		console.log('numberOfChildren', this.state.numberOfChildren);
 	};
 
-	// need a function to add them.
-	fnctn = () => {
-		this.setState({ numberOfChildren: this.state.numberOfChildren + 1 });
-		console.log('numberOfChildren', this.state.numberOfChildren);
-	};
-
-	removeFunction = () => {
+	remove = () => {
 		console.log('Remove button.');
 		this.setState({ numberOfChildren: this.state.numberOfChildren - 1 });
 		console.log('numberOfChildren', this.state.numberOfChildren);
@@ -37,7 +30,7 @@ class EditScreen extends Component {
 			console.log('integer: ', integer);
 			children.push(
 				<div key={integer}>
-					<ExerciseDay remove={this.removeFunction} />
+					<ExerciseDay remove={this.remove} item={integer} />
 				</div>,
 			);
 		}
@@ -46,7 +39,7 @@ class EditScreen extends Component {
 				<Text>Edit Screen</Text>
 				<Text>Screen that allows me to add or edit exercise days</Text>
 				<Text>List existing exercise days.</Text>
-				<AddButton fnctn={this.addFunction} />
+				<AddExerciseDay fnctn={this.add} />
 				{/* <Button title="Add Another Component" onPress={this.fnctn} /> */}
 				{children}
 			</View>

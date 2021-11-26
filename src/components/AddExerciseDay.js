@@ -1,9 +1,9 @@
-// /src/js/components/AddButton.js
+// /src/js/components/AddExerciseDay.js
 
 import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
-const AddButton = ({ fnctn }) => {
+const AddExerciseDay = ({ fnctn }) => {
 	return (
 		<View style={styles.addButton}>
 			<Text>Add button switches between default screen and edit screen</Text>
@@ -22,4 +22,4 @@ const styles = StyleSheet.create({
 		padding: 10,
 	},
 });
-export default AddButton;
+export default AddExerciseDay;

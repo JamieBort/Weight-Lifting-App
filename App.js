@@ -5,7 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import DefaultScreen from './src/components/DefaultScreen';
 import EditScreen from './src/components/EditScreen';
 import ToggleButton from './src/components/ToggleButton';
-import AppComponent from './src/components/AppComponent';
+// import AppComponent from './src/components/AppComponent';
 
 class App extends React.Component {
 	constructor(props) {
@@ -29,7 +29,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<AppComponent />
+				{/* <AppComponent /> */}
 				<ToggleButton fnctn={this.handleToggleButton} />
 				{this.state.isToggleOn ? <DefaultScreen /> : <EditScreen />}
 			</View>
