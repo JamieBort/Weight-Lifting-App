@@ -28,7 +28,8 @@ To run this locally,
 ## Status
 
 **Check the branch:**
-https://github.com/JamieBort/weight-lifting-app/tree/<branch>
+
+`https://github.com/JamieBort/weight-lifting-app/tree/<branch>`
 
 * 
 
