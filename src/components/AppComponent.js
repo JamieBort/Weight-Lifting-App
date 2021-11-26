@@ -10,6 +10,12 @@ class AppComponent extends React.Component {
 		numChildren: 0,
 	};
 
+	onAddChild = () => {
+		this.setState({
+			numChildren: this.state.numChildren + 1,
+		});
+	};
+
 	render() {
 		const children = [];
 
@@ -19,12 +25,6 @@ class AppComponent extends React.Component {
 
 		return <ParentComponent addChild={this.onAddChild}>{children}</ParentComponent>;
 	}
-
-	onAddChild = () => {
-		this.setState({
-			numChildren: this.state.numChildren + 1,
-		});
-	};
 }
 
 const ParentComponent = (props) => (

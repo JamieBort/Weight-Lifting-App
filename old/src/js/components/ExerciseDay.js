@@ -1,4 +1,4 @@
-// src/js/components/ExerciseDay.js
+// old/src/js/components/ExerciseDay.js
 
 // The home screen for when I open the app.
 // Displays the type of exercises I performed when.

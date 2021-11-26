@@ -14,12 +14,12 @@ const AddButton = ({ fnctn }) => {
 
 const styles = StyleSheet.create({
 	addButton: {
-		backgroundColor: 'green',
+		backgroundColor: 'lightblue',
 		// flex: 1,
 		// alignItems: 'center',
 		// justifyContent: 'center',
-		// margin: 10,
-		padding: 5,
+		margin: 10,
+		padding: 10,
 	},
 });
 export default AddButton;
