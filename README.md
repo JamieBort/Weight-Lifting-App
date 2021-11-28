@@ -13,13 +13,15 @@ To run this locally,
 
 ## Next Steps
 
-* Create `basicStructure` branch
+* ~~Create `basicStructure` branch~~
 
-* set up basic outline of each component - what is needed and where
+* ~~set up basic outline of each component - what is needed and where~~
 
-* each time the addButton is selected, a new component needs to be added
+* ~~each time the addButton is selected, a new component needs to be added~~
 
-* it's respective removeButton needs to remove just that one component.
+* ~~it's respective removeButton needs to remove just that one component.~~ This is done but...
+
+* Would **REALLY** like to have the button in the `ExerciseDay` component to remove that component.
 
 * then the state needs to be preserved so that when the app is closed, those added components are kept....
 
@@ -31,7 +33,24 @@ To run this locally,
 
 `https://github.com/JamieBort/weight-lifting-app/tree/<branch>`
 
-* 
+* Created three ways to add a component to the Edit Screen in the `./src/components/EditScreen.js` file:
+
+    ```
+    return (
+        <View style={styles.editScreen}>
+            .
+            .
+            .
+            <AddExerciseDay title="addChildren" fnctn={this.addChildren} />
+            {children}
+
+            {this.state.hijos.map((item, i) => <div key={item.child}>{item.component}</div>)}
+
+            <AddExerciseDay title="addHijos" fnctn={this.addHijos} />
+            {this.state.hijos}
+        </View>
+    );
+    ```
 
 ## Associated Links
 
