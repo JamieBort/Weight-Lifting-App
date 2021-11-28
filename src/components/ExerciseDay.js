@@ -6,11 +6,20 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 // import RemoveButton from './RemoveButton';
 
 const ExerciseDay = (props) => {
-	// const removeButton = () => {
-	// 	console.log('Remove button.');
-	// };
+	const doThis = (event) => {
+		// console.log('Remove button.');
+		// console.log('event: ', event);
+		// console.log('event.target: ', event.target);
+		// console.log('event.target.value: ', event.target.value);
+		// console.log('event.target.parentNode: ', event.target.parentElement);
+		// console.log('event.target.parentNode: ', event.target.parentNode);
+		// console.log('window: ', window);
+		// console.log('window.parent: ', window.parent);
+		console.log('event.target.parentElement.id: ', event.target.parentElement.id);
+		console.log('props.item: ', props.item);
+	};
 	return (
-		<View style={styles.exerciseDay}>
+		<View id="bam!" style={styles.exerciseDay}>
 			<Text>
 				<h3>An exercise day such as leg day</h3>
 				{props.item}
@@ -21,6 +30,10 @@ const ExerciseDay = (props) => {
 			<Text>
 				<p>{props.status ? 'true' : 'false'}</p>
 			</Text> */}
+			{/* <div style={styles.buttonDiv}> */}
+			<Button item={props.item} title="Temp Button" onPress={props.remove} />
+
+			{/* </div> */}
 		</View>
 	);
 };
@@ -33,6 +46,17 @@ const styles = StyleSheet.create({
 		// justifyContent: 'center',
 		margin: 10,
 		padding: 10,
+		// button: {
+		// 	backgroundColor: 'green',
+
+		// margin: 10,
+		// padding: 10,
+		// },
 	},
+	// buttonDiv: {
+	// 	backgroundColor: 'green',
+	// 	// margin: 10 + 'em',
+	// 	// padding: 10 + 'em',
+	// },
 });
 export default ExerciseDay;

@@ -9,66 +9,76 @@ class EditScreen extends Component {
 	state = {
 		numberOfChildren: 0,
 		hijos: [],
+		numberOfHijos: 0,
 	};
 
-	add = () => {
-		console.log('AddExerciseDay pressed');
-		const tempArr = this.state.hijos;
-		tempArr.push({
-			component: (
-				<div key={this.state.numberOfChildren}>
-					<ExerciseDay remove={this.remove} title={'Remove Button '} item={this.state.numberOfChildren} />
-				</div>
-			),
-			child: this.state.numberOfChildren,
-		});
-
+	addChildren = () => {
 		this.setState({
 			numberOfChildren: this.state.numberOfChildren + 1,
-			hijos: tempArr,
 		});
-		// console.log('numberOfChildren', this.state.numberOfChildren);
 	};
 
-	remove = () => {
+	removeChildren = () => {
 		console.log('Remove button.');
 		this.setState({ numberOfChildren: this.state.numberOfChildren - 1 });
 		console.log('numberOfChildren', this.state.numberOfChildren);
+		if (true) {
+			console.log('The button pushed matches the component to be removed.');
+		}
 	};
 
-	// const arr = [];
-	// for (var int = 0; int < this.state.numberOfChildren; int++) {
-	// 	arr.push({
-	// 		component: (
-	// 			<div key={integer}>
-	// 				<ExerciseDay remove={this.remove} title={'Remove Button '} item={integer} />
-	// 			</div>
-	// 		),
-	// 		child: int,
-	// 	});
-	// }
-	// console.log('arr: ', arr);
+	addHijos = () => {
+		this.setState({
+			hijos: [
+				...this.state.hijos,
+				<div key={this.state.numberOfHijos} id={this.state.numberOfHijos}>
+					<ExerciseDay remove={this.removeHijos} title={'Remove Button '} item={this.state.numberOfHijos} />
+					<button onClick={this.removeHijos}>Button in EditScreen.js to remove one component.</button>
+				</div>,
+			],
+			numberOfHijos: this.state.numberOfHijos + 1,
+		});
+	};
+
+	removeHijos = (event) => {
+		let tempArray = [];
+		for (let i = 0; i < this.state.hijos.length; i++) {
+			if (event.target.parentElement.id != this.state.hijos[i]['key']) {
+				// console.log('event.target.parentElement.id: ', event.target.parentElement.id);
+				// console.log("this.state.hijos[i]['key']: ", this.state.hijos[i]['key']);
+				tempArray.push(this.state.hijos[i]);
+			}
+		}
+		// console.log('tempArray: ', tempArray);
+		this.setState({ hijos: tempArray });
+		// this.setState({ hijos: [ ...this.state.hijos, tempArray ] });
+		// console.log('---------------------------------');
+	};
 
 	render() {
 		console.log('state: ', this.state);
 		const children = [];
 		for (var integer = 0; integer < this.state.numberOfChildren; integer++) {
-			// console.log('integer: ', integer);
 			children.push(
 				<div key={integer}>
-					<ExerciseDay remove={this.remove} title={'Remove Button '} item={integer} />
+					<ExerciseDay remove={this.removeChildren} title={'Remove Button '} item={integer} />
 				</div>,
 			);
 		}
+
 		return (
 			<View style={styles.editScreen}>
 				<Text>Edit Screen</Text>
 				<Text>Screen that allows me to add or edit exercise days</Text>
 				<Text>List existing exercise days.</Text>
-				<AddExerciseDay fnctn={this.add} />
-				{/* <Button title="Add Another Component" onPress={this.fnctn} /> */}
-				{children}
-				{/* {arr} */}
+
+				{/* <AddExerciseDay title="addChildren" fnctn={this.addChildren} />
+				{children} */}
+
+				{/* {this.state.hijos.map((item, i) => <div key={item.child}>{item.component}</div>)} */}
+
+				<AddExerciseDay title="addHijos" fnctn={this.addHijos} />
+				{this.state.hijos}
 			</View>
 		);
 	}

@@ -3,11 +3,15 @@
 import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
-const AddExerciseDay = ({ fnctn }) => {
+const AddExerciseDay = ({ fnctn, title }) => {
 	return (
 		<View style={styles.addButton}>
-			<Text>Add button switches between default screen and edit screen</Text>
-			<Button title="Add Button" onPress={fnctn} />
+			<Text>Add Button adds a gym day.</Text>
+			<Button
+				// title="Add Button"
+				title={title}
+				onPress={fnctn}
+			/>
 		</View>
 	);
 };
