@@ -15,7 +15,7 @@ const ExerciseDay = (props) => {
 				<h3>An exercise day such as leg day</h3>
 				{props.item}
 			</Text>
-			<Button item={props.item} title={props.item} onPress={props.remove} />
+			<Button item={props.item} title={props.title + ': ' + props.item} onPress={props.remove} />
 			{/* <EditButton text="Edit this Exercise." editFunction={null} />
 			<RemoveButton text="Remove this Exercise." status={props.status} removeFunction={props.removeFunction} />
 			<Text>
