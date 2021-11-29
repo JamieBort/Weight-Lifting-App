@@ -24,14 +24,23 @@ const ExerciseDay = (props) => {
 				<h3>An exercise day such as leg day</h3>
 				{props.item}
 			</Text>
-			<Button item={props.item} title={props.title + ': ' + props.item} onPress={props.remove} />
+			<Button item={props.item} title={props.title} onPress={props.removeChildren} />
 			{/* <EditButton text="Edit this Exercise." editFunction={null} />
 			<RemoveButton text="Remove this Exercise." status={props.status} removeFunction={props.removeFunction} />
 			<Text>
 				<p>{props.status ? 'true' : 'false'}</p>
 			</Text> */}
 			{/* <div style={styles.buttonDiv}> */}
-			<Button item={props.item} title="Temp Button" onPress={props.remove} />
+			<Button
+				item={props.item}
+				title="Button in ExerciseDay.js to remove one Child component."
+				onPress={props.removeChildren}
+			/>
+			<Button
+				item={props.item}
+				title="Button in ExerciseDay.js to remove one Hijo component."
+				onPress={props.removeHijos}
+			/>
 
 			{/* </div> */}
 		</View>

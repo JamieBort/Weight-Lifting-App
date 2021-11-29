@@ -32,8 +32,12 @@ class EditScreen extends Component {
 			hijos: [
 				...this.state.hijos,
 				<div key={this.state.numberOfHijos} id={this.state.numberOfHijos}>
-					<ExerciseDay remove={this.removeHijos} title={'Remove Button '} item={this.state.numberOfHijos} />
-					<button onClick={this.removeHijos}>Button in EditScreen.js to remove one component.</button>
+					<ExerciseDay
+						removeHijos={this.removeHijos}
+						// title="Remove Button from Children functionality "
+						item={this.state.numberOfHijos}
+					/>
+					<button onClick={this.removeHijos}>Button in EditScreen.js to remove one Hijo component.</button>
 				</div>,
 			],
 			numberOfHijos: this.state.numberOfHijos + 1,
@@ -61,7 +65,11 @@ class EditScreen extends Component {
 		for (var integer = 0; integer < this.state.numberOfChildren; integer++) {
 			children.push(
 				<div key={integer}>
-					<ExerciseDay remove={this.removeChildren} title={'Remove Button '} item={integer} />
+					<ExerciseDay
+						removeChildren={this.removeChildren}
+						title="Remove Button from Children functionality."
+						item={integer}
+					/>
 				</div>,
 			);
 		}
@@ -72,11 +80,14 @@ class EditScreen extends Component {
 				<Text>Screen that allows me to add or edit exercise days</Text>
 				<Text>List existing exercise days.</Text>
 
+				{/* Done us this one */}
 				{/* <AddExerciseDay title="addChildren" fnctn={this.addChildren} />
 				{children} */}
 
+				{/* Done us this one */}
 				{/* {this.state.hijos.map((item, i) => <div key={item.child}>{item.component}</div>)} */}
 
+				{/* Use this one. */}
 				<AddExerciseDay title="addHijos" fnctn={this.addHijos} />
 				{this.state.hijos}
 			</View>
