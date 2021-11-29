@@ -23,6 +23,8 @@ To run this locally,
 
 * Would **REALLY** like to have the button in the `ExerciseDay` component to remove that component. Where the function is passed from a parent component. See "[How can I update the parent's state in React?](https://stackoverflow.com/questions/35537229/how-can-i-update-the-parents-state-in-react) 19 answers." from this [State](https://github.com/JamieBort/LearningDirectory/blob/master/JavaScript/Libraries/React/ReactSpecificConcepts/State.md#state) section.
 
+    **SEE:** around 3:50m here: https://youtu.be/DlfeJn-F3Ts?t=229; specifically  the `handleRemoveStory` function.
+
 * then the state needs to be preserved so that when the app is closed, those added components are kept....
 
 * maybe have the removeButton and addButton both be replaced with a single button?
