@@ -1,6 +1,26 @@
 # weight-lifting-app
 
+##What is this?
 An app to record my workout each session.
+
+It needs to replicate https://wger.de/ and/or Jefit.
+Specifically 
+
+* have a component that counts down between sets.
+
+* have a component that allows me to choose between the following units
+    * distance covered (as in walking lunges)
+        * feet
+    * weight
+        * pounds
+        * kg
+    * etc.
+* add specific exercises to my leg/back/arms/etc. day/routine
+* add a leg day/routine
+
+* store my data where?
+
+* display my data how?
 
 Created using the `expo init weight-lifting-app` command from [Setting up the development environment](https://reactnative.dev/docs/environment-setup) documentation.
 
