@@ -2,8 +2,6 @@
 
 ## Next Steps
 
-* Delete the `basicStructure` branch.
-
 * Create the `dev` branch.
 
 * Review the `old/` directory to make sure there isn't anything in there that I need.
@@ -19,7 +17,7 @@
             * **SEE:** around 3:50m here: https://youtu.be/DlfeJn-F3Ts?t=229; specifically  the `handleRemoveStory` function.
     
 * Merge the `removeButton` branch into `main`.
-* Delete the `removeButton` branch.
+* Delete the `removeButton` branch. (see: https://trello.com/c/XZXUcEjo/757-read-up-on-deleting-old-github-branches)
 
 
 * Create a `countdownTimer` branch.
@@ -29,7 +27,7 @@
     * this component will have a global default set that can be changed (for that exercise type - rather than something more granular (such as that specific exercise on that specific workout day...)).
     
 * Merge the `countdownTimer` branch into `main`.
-* Delete the `countdownTimer` branch.
+* Delete the `countdownTimer` branch. (see: https://trello.com/c/XZXUcEjo/757-read-up-on-deleting-old-github-branches)
     
 
 * Create a `units` branch.
@@ -40,7 +38,7 @@
     * (initially) this component will use a variable defined in the component itself, rather than pull the data in from a database or higher up in the app.
     
 * Merge the `units` branch into `main`.
-* Delete the `units` branch.
+* Delete the `units` branch. (see: https://trello.com/c/XZXUcEjo/757-read-up-on-deleting-old-github-branches)
 
 
 * then the state needs to be preserved so that when the app is closed, those added components are kept....
@@ -48,6 +46,8 @@
 * maybe have the removeButton and addButton both be replaced with a single button?
 
 ## Status
+
+Deleted the `basicStructure` branch.
 
 **Check the branch:**
 
