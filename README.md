@@ -1,6 +1,6 @@
 # weight-lifting-app
 
-##What is this?
+## What is this?
 An app to record my workout each session.
 
 It needs to replicate https://wger.de/ and/or Jefit.
