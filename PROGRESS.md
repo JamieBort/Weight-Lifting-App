@@ -2,8 +2,6 @@
 
 ## Next Steps
 
-* Create the `dev` branch.
-
 * Review the `old/` directory to make sure there isn't anything in there that I need.
 
 * If so, address that.
@@ -46,12 +44,11 @@
 * maybe have the removeButton and addButton both be replaced with a single button?
 
 ## Status
+**\*\*\* NOTE:** First check the branch: `https://github.com/JamieBort/weight-lifting-app/tree/<branch>` **\*\*\***
 
-Deleted the `basicStructure` branch.
+* Created the `dev` branch.
 
-**Check the branch:**
-
-`https://github.com/JamieBort/weight-lifting-app/tree/<branch>`
+* Deleted the `basicStructure` branch.
 
 * Created three ways to add a component to the Edit Screen in the `./src/components/EditScreen.js` file:
 
