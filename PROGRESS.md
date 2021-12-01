@@ -34,9 +34,21 @@
         * if it is a running exercise then distance will be used.
         * if it is a weight lifting exercise then pounds or kg can be selected.
     * (initially) this component will use a variable defined in the component itself, rather than pull the data in from a database or higher up in the app.
-    
+
 * Merge the `units` branch into `main`.
 * Delete the `units` branch. (see: https://trello.com/c/XZXUcEjo/757-read-up-on-deleting-old-github-branches)
+<branch name>
+
+* Create a `ExerciseType` branch.
+    * Create a `ExerciseType` component to switch between one of several types of exercises. Those being
+        * cardio exercises (running, swimming, etc.)
+        * weight exercises (squats, bench press, etc.)
+        * flexibility exercises (downward dog, headstand, etc.)
+        * Or ...
+    * this component will be when when adding exercises to "Leg day", or to "cardio day" or to "back day", etc.
+
+* Merge the `ExerciseType` branch into `main`.
+* Delete the `ExerciseType` branch. (see: https://trello.com/c/XZXUcEjo/757-read-up-on-deleting-old-github-branches)
 
 
 * then the state needs to be preserved so that when the app is closed, those added components are kept....

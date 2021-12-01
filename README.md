@@ -55,6 +55,10 @@ To run this locally,
             |
             |- feature 4
 
+## How to use the app
+
+See the HowToUseTheApp.md file.
+
 ## Associated Links
 
 * https://trello.com/c/1DKwg7RU/1226-weight-lifting-app
