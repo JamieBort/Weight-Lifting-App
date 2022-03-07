@@ -1,5 +1,7 @@
 # PROGRESS.md
 
+NOTE - my workout app (not necessarily this one - maybe this one. I need to refresh my memory with it though.) needs to have at least two databases (or two tables). One for all of the exercises that can be added to a gym day/routine. And one for the routine itself, keeping track of the weight, reps, etc.
+
 ## Next Steps
 
 * Review the `old/` directory to make sure there isn't anything in there that I need.
